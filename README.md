@@ -20,7 +20,7 @@
 > 「{一句精选文章的引用或简介}」[3](@ref)
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=分享知识，共同成长&author=你的名字" alt="个人座右铭"/>
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=分享知识，共同成长&author=Qin" alt="个人座右铭"/>
 </p>
 
 ## 🤝 交流互动
@@ -29,8 +29,7 @@
 如果你对博客内容有任何建议或发现了错误，欢迎通过以下方式联系我：
 
 - **GitHub Issues**: [创建Issue](你的repo的issue链接)
-- **邮箱联系**: your_email@example.com
-- **社交媒体**: [Twitter/LinkedIn等]
+- **邮箱联系**: 3417675082@qq.com
 
 ### 🌟 支持我
 如果觉得我的博客对你有帮助，可以：
