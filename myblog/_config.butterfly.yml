@@ -37,7 +37,7 @@ menu:
 
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / mac / mac light / false
-  theme: mac
+  theme: darker
   # Code block height limit (unit: px)
   height_limit: false
   word_wrap: true
@@ -1094,7 +1094,7 @@ CDN:
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
-    # busuanzi:
+    busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
     # canvas_fluttering_ribbon:
     # canvas_nest:
     # canvas_ribbon:
