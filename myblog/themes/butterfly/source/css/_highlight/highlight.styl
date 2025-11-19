@@ -7,10 +7,10 @@ wordWrap = $highlight_enable && !$highlight_line_number && hexo-config('code_blo
 :root
   --hl-color: $highlight-foreground
   --hl-bg: $highlight-background
-  --hltools-bg: $highlight-tools.bg-color
-  --hltools-color: $highlight-tools.color
-  --hlnumber-bg: $highlight-gutter.bg-color
-  --hlnumber-color: $highlight-gutter.color
+  --hltools-bg: $highlight-tools["bg-color"]
+  --hltools-color: $highlight-tools["color"]
+  --hlnumber-bg: $highlight-gutter["bg-color"]
+  --hlnumber-color: $highlight-gutter["color"]
   --hlscrollbar-bg: $highlight-scrollbar
   --hlexpand-bg: linear-gradient(180deg, rgba($highlight-background, .6), rgba($highlight-background, .9))
 
