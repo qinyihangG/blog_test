@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git submodule status)",
+      "Bash(cat .gitmodules 2)",
+      "Bash(nul)",
+      "Bash(git ls-tree -r HEAD --name-only)",
+      "Bash(git rev-parse --show-toplevel)",
+      "Bash(git pull origin master --no-edit)",
+      "Bash(git push origin master)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

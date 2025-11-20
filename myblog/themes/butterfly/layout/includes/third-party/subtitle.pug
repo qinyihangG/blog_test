@@ -1,5 +1,5 @@
 - const { effect, source, sub, typed_option } = theme.subtitle
-- let subContent = sub || new Array()
+- let subContent = sub ? (Array.isArray(sub) ? sub : [sub]) : new Array()
 
 script.
   window.typedJSFn = {
@@ -17,7 +17,14 @@ script.
         if (typeof Typed === 'function') {
           subtitleType()
         } else {
-          btf.getScript('!{url_for(theme.asset.typed)}').then(subtitleType)
+          btf.getScript('!{url_for(theme.asset.typed)}').then(subtitleType).catch(err => {
+            console.error('Failed to load typed.js:', err)
+            // 如果无法加载typed.js，则静态显示subtitle
+            const subArray = !{JSON.stringify(subContent)}
+            if (subArray && subArray.length > 0) {
+              document.getElementById('subtitle').textContent = subArray[0]
+            }
+          })
         }
       } else {
         subtitleType()
@@ -105,9 +112,14 @@ case source
       typedJSFn.run(subtitleType)
 
   default
-    if subContent.length > 0
-      script.
-        function subtitleType () {
-          typedJSFn.processSubtitle(!{JSON.stringify(subContent)})
+    script.
+      function subtitleType () {
+        const subArray = !{JSON.stringify(subContent)}
+        if (subArray && subArray.length > 0) {
+          typedJSFn.processSubtitle(subArray)
+        } else {
+          // 如果没有自定义内容，不显示任何东西
+          document.getElementById('subtitle').style.display = 'none'
         }
-        typedJSFn.run(subtitleType)
+      }
+      typedJSFn.run(subtitleType)

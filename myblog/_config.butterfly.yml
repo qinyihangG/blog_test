@@ -53,7 +53,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+  # fab fa-github: https://github.com/qinyihangG || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
 # --------------------------------------
@@ -63,14 +63,14 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /img/touxiang.png
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: /img/dingbubeijing.png
 
 # The banner image of index page
 index_img:
@@ -155,7 +155,7 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -170,7 +170,7 @@ subtitle:
   # 3 - jinrishici.com
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
-  sub:
+  sub: "哈哈哈"
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
